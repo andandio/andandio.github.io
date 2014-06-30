@@ -1,0 +1,59 @@
+html  {
+	font-family: 'Questrial', sans-serif;
+}
+
+h1  {
+	
+	height: 55px;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	width: 900px;
+	font-size: 4em;
+}
+#shareThisShareEgg  {
+	float: right;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+
+body  {
+	background-color: Lemonchiffon;
+
+
+}
+ 
+.carriage {
+
+	height: 100%;
+	width: 100%;
+    border-top-style: solid;
+	border-top-color: aqua;
+}
+
+#txtbrick  {
+	position: fixed;
+	background-color: BlanchedAlmond;
+	height: 400px;
+	width: 740px;
+	top: 50%;
+    left: 50%;
+    margin-top: -190px;
+    margin-left: -389px;
+    padding: 20px;
+    overflow: scroll; 
+    font-size: 1.5em;
+    border-style: solid;
+    border-color: black;  
+}
+
+
+.picspace  {
+	height: 660px;
+	width: 860px;
+	margin: 0 auto;
+	border-style: solid;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	margin-left: 150px;
+	border-color: transparent;
+}
