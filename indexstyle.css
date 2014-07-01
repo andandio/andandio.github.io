@@ -1,8 +1,24 @@
+html  {
+	font-family: 'Special Elite', cursive;
+}
+body  {
+	background-color: #E6E6E6 ;
+}
+
 .links  {
 	height: 100px;
-	width: 100px;
+	width: 200px;
 	border-style: solid;
 	border-color: aqua;
-	margin-top: 150px;
-	margin-left: 150px;
+	text-align: center;
+	
+	margin: auto;
+	margin-top: 60px
+	
+
+}
+
+.links a:link  {
+	text-decoration: none;
+	color: 	#350000;
 }
