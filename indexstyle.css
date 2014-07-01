@@ -1,8 +1,8 @@
 html  {
-	font-family: 'Special Elite', cursive;
+	font-family: 'Metrophobic', sans-serif;
 }
 body  {
-	background-color: #E6E6E6 ;
+	background-image: url("indeximage/indimage.jpg.png"); ;
 }
 
 .links  {
@@ -11,7 +11,7 @@ body  {
 	border-style: solid;
 	border-color: aqua;
 	text-align: center;
-	
+	background-color: #F2F2FF;
 	margin: auto;
 	margin-top: 60px
 	
