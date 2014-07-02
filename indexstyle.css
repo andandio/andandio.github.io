@@ -1,19 +1,24 @@
 html  {
-	font-family: 'Metrophobic', sans-serif;
+	font-family: 'Exo 2', sans-serif;
 }
 body  {
 	background-image: url("indeximage/indimage.jpg.png"); ;
 }
 
 .links  {
-	height: 100px;
+	height: 200px;
 	width: 200px;
+	line-height: 33px;
 	border-style: solid;
 	border-color: aqua;
+	border-radius: 50%;
+	border-width: 20px;
 	text-align: center;
+	vertical-align: middle;
 	background-color: #F2F2FF;
 	margin: auto;
-	margin-top: 60px
+	margin-top: 96px
+
 	
 
 }
