@@ -1,0 +1,78 @@
+html  {
+	font-family: 'Droid Sans', sans-serif;
+}
+h1  {
+	background-color: coral;
+	text-align: center;
+	height: 65px;
+	margin-top: 0px;
+	line-height: 65px;
+
+}
+
+body  {
+  background: lightGray;
+
+}
+
+.main  {
+	display: flex;
+	flex-direction: row;
+}
+
+.sidebar  {
+	background-color: antiqueWhite;
+	justify-content: space-around;
+	margin-top: 75px;
+    
+}
+
+.sidebar:hover  {
+	text-color: white;
+}
+
+sidebar: visited  {
+	font-color: red;
+}
+#fbox  {
+	display: flex;
+	flex-direction: column;
+}
+
+h3  {
+  margin-left: 40px;
+}
+
+.column  {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	border-style: solid;
+	border-color: Brown;
+}
+#change  {
+	border-right: 0px;
+}
+	
+
+#foot {
+
+	display: flex;
+	display-direction: row;
+	justify-content: space-around;
+	position: absolute;
+	bottom: 0;
+	width: 90%;
+	border-style: solid;
+	border-color: Brown;
+	border-width: 1px;
+}
+
+#foot a:link  {
+	text-decoration: none;
+	color: Black;
+}
+
+
+
