@@ -6,6 +6,7 @@ body {
   font-weight: 300;
   line-height: 1.2em;
   margin: 0px auto;
+  min-width: 960px;
   width: 100%;
 }
 
@@ -169,6 +170,8 @@ header:after {
   clear: both;
 }
 
+
+
 #famous article img {
   border-radius: 50%;
   box-shadow: 0px 0px 5px #000;
@@ -324,7 +327,7 @@ footer:after {
 @media screen and (max-width: 480px){
   h1{
     padding: 20px;
-    line-height: 40px;
+    line-height: 100%;
   }
   h1 span{
       display: none;
@@ -333,16 +336,16 @@ footer:after {
     margin-left: 5px;
   }
  header nav li{
-    line-height: 40px;
+    line-height: 100%;
   }
   header nav li a {
     font-size: 0.9em;
-    margin: 3px;
+    margin: 18.75%;
     padding: 1px;
   }
   #famous article.woman {
     float: none;
-    margin: 5px auto;
+    margin: 62.5% auto;
     padding: 2%;
     width: 80%
   }
@@ -359,11 +362,11 @@ footer:after {
     display:none;
   }
   footer nav li{
-     line-height: 40px;
+     line-height: 100px;
    }
   footer nav li a {
      font-size: 0.9em;
-     margin: 3px;
+     margin: 18.75%;
      padding: 1px;
    }
 }

@@ -310,3 +310,61 @@ footer:after {
   font-weight: normal;
   font-style: normal;
 }
+
+@media screen and (max-width: 960px){
+  h1 {
+    font-size: 1.1em;
+    line-height: 40px;
+  }
+  header nav li{
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  h1{
+    padding: 20px;
+    line-height: 100%;
+  }
+  h1 span{
+      display: none;
+  }
+  header nav{
+    margin-left: 5px;
+  }
+ header nav li{
+    line-height: 100%;
+  }
+  header nav li a {
+    font-size: 0.9em;
+    margin: 18.75%;
+    padding: 1px;
+  }
+  #famous article.woman {
+    float: none;
+    margin: 62.5% auto;
+    padding: 2%;
+    width: 80%
+  }
+  h2{
+    font-size: 2.0em;
+  }
+  #organizations{
+    height:auto;
+  }
+  #organizations ul li{
+    max-width: 100%;
+  }
+  #organizations ul li img{
+    display:none;
+  }
+  footer nav li{
+     line-height: 100px;
+   }
+  footer nav li a {
+     font-size: 0.9em;
+     margin: 18.75%;
+     padding: 1px;
+   }
+}
+
