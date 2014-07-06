@@ -1,29 +1,94 @@
 html  {
-	font-family: 'Exo 2', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 body  {
+
 	background-image: url("indeximage/indimage.jpg.png"); ;
 }
 
+
 .links  {
-	height: 200px;
-	width: 200px;
-	line-height: 33px;
+	float: left;
+	height: 300px;
+	width: 300px;
 	border-style: solid;
 	border-color: aqua;
 	border-radius: 50%;
 	border-width: 20px;
 	text-align: center;
 	vertical-align: middle;
-	background-color: #F2F2FF;
-	margin: auto;
-	margin-top: 96px
-
+	background-color: AntiqueWhite;
+	margin-left: 15%;
+	margin-top: 10%;
+	font-weight: 100;
+	font-size: 2.07em;
 	
-
 }
 
 .links a:link  {
 	text-decoration: none;
-	color: 	#350000;
+	color: 	DarkSlateGray;
 }
+
+.links a:hover  {
+	color: DarkCyan;
+}
+
+.links a:visited  {
+	color: IndianRed;
+}
+
+#inner  {
+	border-style: none;
+	border-radius: 50%;
+	margin-top: 22%;
+	line-height: 33px;
+}
+
+
+.tricontainer  {
+	float: right;
+	margin-right: 100px;
+	
+}
+
+.triangle  {
+
+    position: relative;
+	width: 0;
+	height: 0;
+	border-left: 150px solid transparent;
+	border-right: 150px solid transparent;
+	border-bottom: 300px solid aqua;
+	margin-top: 25px;		
+}
+
+.def {
+	width: 200px;
+	position: absolute;
+	top: 240px;
+	left: -100px;
+	text-align: center;
+	font-size: 1.12em;
+}
+.archiveli  {
+	position: absolute;
+	top: 165px;
+	left: -73.5px;
+	height: 85px;
+	width: 146px;
+	background-color: aqua;
+	margin-right: 50%;
+	overflow: scroll;
+	
+}
+
+@media screen and (max-width: 480px)  {
+  .links  {
+  	float: none;
+  }
+  .tricontainer  {
+  	float: none;
+  }
+}
+

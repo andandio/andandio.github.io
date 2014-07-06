@@ -31,18 +31,16 @@ body  {
 }
 
 #txtbrick  {
-	position: fixed;
 	background-color: #C2FFFF;
 	height: 400px;
 	width: 740px;
-    margin-top: 10%;
-    left: 50%;
-    margin-left: -374px;
+    margin: 0 auto;
+    margin-top: 100px;
     padding: 20px;
     overflow: scroll; 
     font-size: 1.5em;
     border-style: solid;
-    border-color: black;  
+    border-color: aqua;  
 }
 
 
@@ -54,5 +52,5 @@ body  {
 	margin-right: auto;
 	border-style: solid;
 	margin-top: 5%;
-	border-color: transparent;
+	border-color: transparent ;
 }

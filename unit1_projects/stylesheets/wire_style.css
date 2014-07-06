@@ -1,0 +1,39 @@
+html  {
+  font-family: 'Permanent Marker', cursive;
+}
+body  {
+	background-color: #FFF9E3;
+}
+h1  {
+	text-align: center;
+	font-size: 2.2em;
+}
+
+h2  {
+	border-style: solid;
+	border-color: maroon;
+	width: 300px;
+	height: 45px;
+	text-align: center;
+}
+aside  {
+	width: 300px;
+	height: 350px;
+	float: left;
+	border-style: solid;
+	border-color: maroon;
+}
+h3  {
+	width: 650px;
+	float: right;
+	text-align: center;
+	border-style: solid maroon;
+}
+img  {
+	float: right;
+	border-style: solid;
+	border-color: maroon;
+	width: 620px;
+	height: 500px;
+	margin-right: 45px;
+}
