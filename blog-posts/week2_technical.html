@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<link href="blog_stylesheets/week2_tech.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Questrial|Raleway:400,100,200' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="http://w.sharethis.com/gallery/shareegg/shareegg.js"></script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "442a6d5b-5ebe-44eb-a17f-2bc2d0e07562", doNotHash: false, doNotCopy: false, hashAddressBar: false, onhover:false});</script>
+<link media='screen' type='text/css' rel='stylesheet' href='http://w.sharethis.com/gallery/shareegg/shareegg.css'></link>
+</head>
+<body>
+  
+  <div  id='shareThisShareEgg' class='shareEgg'></div>
+  <script type='text/javascript'>stlib.shareEgg.createEgg('shareThisShareEgg', ['sharethis','facebook','twitter','pinterest','email','googleplus'], {title:'ShareThis Rocks!!!',url:'http://www.sharethis.com',theme:'shareegg'});</script>	
+  <h1>ah</h1>
+  <section class = "carriage" > 
+  	<article id = "txtbrick">
+      <h2>CSS Positioning</h2> 
+      <p> Positioning elements on the page has everything to do with how the user experiences the space they've entered. It gives developers the opportunity, to some degree, to guide the user down a particular route. It can influence where one is likely to first direct their attention and where one is likely to end up. Positioning can also point toward what a user might end up feeling is the single most important takeaway from their interaction with the page or application.</p><p>There are four types of positioning, and the following is a brief description of the powers each one harnesses. Pay extra close attention to how each interacts with the left/right/bottom/top properties. These interactions demonstrate how these positionings can be useful.</p><a id="topic">Static</a><br> Static positioning is the default. Without explicit definition, all elements are static. They sit in whatever way the cascade of the page dictates. Static elements don't care about top/bottom/left/right properties. Adding one of these will do nothing to a static element.</p>
+      <a id="topic">Relative</a><br>Relative positioning has a tricky name. It might seem like it's measured "relative to" something else, but in fact, it's measured relative to itself, specifically to where it would normally be on the page. This is where the left/right/bottom/top properties become so useful. They tell the relative-positioned element how far and in what direction from its origin to move. These have a special relationship with the next type: absolute. Relatives are often used as parents for absolute-positioned elements. Relative parent elements can be thought of the "relative" that gave "absolutely" everything to its child. </p><a id="topic">Absolute</a><br>Absolute elements are like the grandchildren of normal flow in that they tend to be once-removed from it. An absolute-positioned element is relative to the next closest parent that isn't positioned as static. Top/bottom/left/right properties will move an absolute element in relation to where it is <em>within that parent</em> and not in relation to its own place on the page. This positioning is uniquely useful because it allows overlapping of other elements. When several siblings are all positioned absolute, a z-index assignment will give them a stacking order for overlap.</p><a id="topic">Fixed</a><br>No amount of scrolling in the browser window will move a fixed element. It's stuck. It's the reject element in the normal flow; all the other elements ignore it, and act like it doesn't exist. The stubborn fixed element doesn't care though. It stays right where the top/bottom/left/right properies set it, and it overlaps anything flowing under it in body of the document.</p><p>Check out the table below to compare the same elements in some different possible states. The parent is blue, and the child is white.</p>
+    </article>
+    <article class = "picspace">
+      <div class = "tabtable">
+        <ul class = "tabs pieces">
+          <li><a href = "#imgone"> a</a></li>
+          <li><a href = "#imgtwo"> b</a></li>
+          <li><a href = "#imgthree">c</a></li>
+          <li><a href = "#imgfour">d</a></li>
+          <li><a href = "#imgfive">e</a></li>
+        </ul>
+      </div>
+      <div class = "imgbox">
+        <div id ="imgone">
+          <img src="blog_images/pic1.jpg.png" alt ="pic1">
+          <p>Parent: relative. Child: absolute.<br> Child => top:65px, left:65px<br>Child is 65px from the top and left of parent's border. </p>
+        </div>
+        <div id ="imgtwo">
+          <img src="blog_images/pic2.jpg.png" alt ="pic2">
+          <p>Parent: static. Child: absolute.<br> Child => top:65px, left:65px<br>Parent is static so doesn't read left and top properties.<br>There is no parent that isn't static, so child is positioned absolute to html element.</p>
+        </div>
+        <div id ="imgthree">
+          <img src="blog_images/pic3.jpg.png" alt ="pic3">
+          <p>Parent: static. Child: fixed.<br>Child => top: 65px, left: 65px<br> Child is stuck 65px from the browser windown border.
+        </div>
+        <div id ="imgfour">
+          <img src="blog_images/pic4.jpg.png" alt ="pic4">
+          <p>Parent: absolute. Child: absolute.<br> Child => top:65, left:65<br>Parent and child are both absolutely positioned relative to their respective containers. </p>
+        </div>
+        <div id ="imgfive">
+          <img src="blog_images/pic5.jpg.png" alt ="pic5">
+          <p>Parent: relative. Child: static.<br> Child => top:65, left:65<br>Child is static so relative to the browser window. </p>
+        </div>
+      </div>  
+
+    </article>
+    <div id = "chain"><a href= "http://anderseverett.github.io/">- home -<a></div>
+  </section>   
+</body>
+</html>

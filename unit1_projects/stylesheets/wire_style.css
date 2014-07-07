@@ -12,9 +12,11 @@ h1  {
 h2  {
 	border-style: solid;
 	border-color: maroon;
+	border-bottom-color: transparent;
 	width: 300px;
 	height: 45px;
 	text-align: center;
+	margin-bottom: 0px;
 }
 aside  {
 	width: 300px;
@@ -22,6 +24,7 @@ aside  {
 	float: left;
 	border-style: solid;
 	border-color: maroon;
+	margin-top: 0px;
 }
 h3  {
 	width: 650px;
