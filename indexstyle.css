@@ -79,9 +79,20 @@ body  {
 	width: 146px;
 	background-color: aqua;
 	margin-right: 50%;
-	overflow: scroll;
-	
+	overflow: scroll;	
 }
+.archiveli li  {
+	
+	list-style-type: none;
+}
+.archiveli a:link  {
+	color: DarkSlateGray;
+	text-decoration: none;
+}
+.archiveli a:hover  {
+	color: DarkCyan;
+}
+
 
 @media screen and (max-width: 480px)  {
   .links  {
