@@ -22,21 +22,22 @@ body  {
 	margin-top: 10%;
 	font-weight: 100;
 	font-size: 2.07em;
-	
+}
+.links a {
+	color: DarkSlateGray;
 }
 
 .links a:link  {
 	text-decoration: none;
-	color: 	DarkSlateGray;
 }
 
 .links a:hover  {
 	color: DarkCyan;
 }
 
-.links a:visited  {
+/*.links a:visited  {
 	color: IndianRed;
-}
+}*/
 
 #inner  {
 	border-style: none;
