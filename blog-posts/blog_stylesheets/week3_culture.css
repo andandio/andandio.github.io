@@ -21,6 +21,8 @@ h1  {
 
 body  {
 	background-color: Lemonchiffon;
+	margin: 0;
+	padding; 0;
 
 
 }
@@ -71,19 +73,10 @@ body  {
 }
 
 
-.picspace  {
-	height: 660px;
-	width: 860px;
-	padding: 0;
+#pic {
+	width: 30%;
 	margin-left: auto;
 	margin-right: auto;
-	border-style: solid;
 	margin-top: 5%;
-	border-color: transparent ;
-	position: relative;
-}
-#pic  {
-	position: absolute;
-	margin-right: auto;
-	margin-left: auto;
+		
 }
