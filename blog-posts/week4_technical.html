@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+	<link href="blog_stylesheets/blogstylemaster.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+  <title> ah && a | DBC Blog</title>
+	<script type="text/javascript" src="http://w.sharethis.com/gallery/shareegg/shareegg.js"></script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "442a6d5b-5ebe-44eb-a17f-2bc2d0e07562", doNotHash: false, doNotCopy: false, hashAddressBar: false, onhover:false});</script>
+<link media='screen' type='text/css' rel='stylesheet' href='http://w.sharethis.com/gallery/shareegg/shareegg.css'></link>
+</head>
+<body>
+  
+  <div  id='shareThisShareEgg' class='shareEgg'></div>
+  <script type='text/javascript'>stlib.shareEgg.createEgg('shareThisShareEgg', ['sharethis','facebook','twitter','pinterest','email','googleplus'], {title:'ShareThis Rocks!!!',url:'http://www.sharethis.com',theme:'shareegg'});</script>	
+  <h1>ah</h1>
+  <section class = "carriage" > 
+  	<article id = "txtbrick"><h3>Loops</h3>Loops are a miracle. Not really, but they are an import part of getting computers to do all of human's boring shit.  Computers don't get bored of looping or repetition; in fact, they'll do it forever if you're not careful. 
+
+There are several different ways to loop in Ruby. Each is useful, but more importantly, each of them is useful in different scenarios. Some methods that do the work of a loop don't actually look like loops at all. Here's a brief description of the different ways to iterate through a collection of data.
+
+<h3> For Loop </h3>
+It seems the for loop, while popular in other languages, is not usually at the top of a Rubyist's preference list. There are too many better alternatives. Rarely is a for-loop the most economic way to express a series of iterations, but here it is anyway:<br><br>
+
+for i in 0...number_of_loops do<br><br> 
+ 
+and then the action follows and follows and follows.
+
+<h3> Just Do It Loop</h3>
+A better way to do the for-loop in Ruby is to say "do it", so here's that:<br><br>
+
+(0..number_of_loops).times do |i|<br><br>
+
+Remember, loops of this type and the last type have to be followed by the key word "end". The "times" here lets the computer know how many times you want the loop to happen.
+
+<h3> While Loop</h3>
+"While" works like "for" except for the fact that it passes a Boolean into the equation. As long as the Boolean tests true, we keep the loop spinning. Make sure and tack an "end" onto this after your instructions, or you'll have problems.<br><br>
+
+while x > 0 <br><br>
+
+get shit done, etc.
+
+<h3> Until</h3>
+
+"Until" utilizes a Boolean as well. Everything keeps happening until that Boolean turns true. So, the "until" loop needs things to be false in order to keep on looping, and it also needs an "end" after the action.<br><br>
+
+until x < 0 do <br><br>
+
+whatever it is you do.
+
+<h3> upto/downto</h3>
+You'll notice that in some of the examples above I used two periods and in some three. When three periods are in play, the loop goes up to but does not include the final indicator. In the same way, "upto" and "downto" take us ride up to the brink of our limits. <br><br>
+
+100.downto(0) do |i|<br><br>
+
+or<br><br>
+
+1.upto(200) do |i|<br><br>
+
+Don't forget your "end".
+
+<h3>#each</h3>
+Then there are those single-word methods that do all the work of what we have in the above examples. See the Enumerable mixin for a comprehensive list of specialized looping. Perhaps the most useful is the self-explanatory #each:<br><br>
+
+array.each do |i|<br><br>
+
+Let me know if I've missed any!
+</article>
+    <div class = "picspace"></div>
+    <div id = "chain"><a href= "http://anderseverett.github.io/">- home -<a></div>  
+  </section>
+</body>
+</html>
