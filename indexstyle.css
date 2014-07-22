@@ -106,7 +106,7 @@ body  {
 	margin-left: -20px;
 }
 
-@media screen and (max-width: 310px)  {
+@media screen and (max-height: 352px)  {
   .links  {
   	float: none;
   	width: 90%;
@@ -128,10 +128,12 @@ body  {
 
 @media screen and (max-height: 660px) {
 	.links  {
+		float: left;
 		margin-left: 5%;
 		margin-top: 5%
 	}
 	.tricontainer  {
+		margin-top: 40%;
 		margin-right: 5%;
 		margin-bottom: 5%;
 		float: right;
