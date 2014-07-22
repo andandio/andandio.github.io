@@ -127,7 +127,7 @@ body  {
 	margin-left: -20px;
 }
 
-@media screen and (min-width: 1px) and (max-width: 359px)  {
+@media screen and (min-device-width: 1px) and (max-device-width: 359px)  {
   .links  {
   	float: none;
   	width: 100%;
