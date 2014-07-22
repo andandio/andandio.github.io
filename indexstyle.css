@@ -130,14 +130,15 @@ body  {
 @media screen and (min-width: 1px) and (max-width: 320px)  {
   .links  {
   	float: none;
-  	width: 90%;
+  	width: 110%;
+    height: 110%;
   	margin-right: auto;
   	margin-left: auto;
   	
   }
   .tricontainer  {
   	float: none;
-  	width: 90%;
+  	width: 105%;
   	margin-right: auto;
   	margin-left: auto;
   }
