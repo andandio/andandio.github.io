@@ -128,8 +128,12 @@ body  {
 	.links  {
 		margin-left: 5%;
 	}
+	.tricontainer  {
+		margin-right: 5%;
+		margin-bottom: 5%;
+
+	}
 	.triangle  {
 		float: right;
-
 	}
 } 
