@@ -109,17 +109,25 @@ body  {
 @media screen and (max-width: 768px)  {
   .links  {
   	float: none;
+  	width: 80%;
   	margin-right: auto;
   	margin-left: auto;
   }
   .tricontainer  {
   	float: none;
+  	width: 80%;
   	margin-right: auto;
   	margin-left: auto;
   }
+  .triangle  {
+  	float: none;
+  }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-height: 660px) {
+	.links  {
+		margin-left: 5%;
+	}
 	.triangle  {
 		float: right;
 
