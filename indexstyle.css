@@ -3,7 +3,8 @@ html  {
 }
 body  {
 
-	background-image: url("indeximage/indimage.jpg.png"); ;
+	background-image: url("indeximage/indimage1.jpg.png"); 
+
 }
 
 
@@ -105,12 +106,22 @@ body  {
 	margin-left: -20px;
 }
 
-@media screen and (max-width: 480px)  {
+@media screen and (max-width: 768px)  {
   .links  {
   	float: none;
+  	margin-right: auto;
+  	margin-left: auto;
   }
   .tricontainer  {
   	float: none;
+  	margin-right: auto;
+  	margin-left: auto;
   }
 }
 
+@media screen and (max-width: 1024px) {
+	.triangle  {
+		float: right;
+
+	}
+} 
