@@ -106,7 +106,7 @@ body  {
 	margin-left: -20px;
 }
 
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 468px)  {
   .links  {
   	float: none;
   	width: 80%;
@@ -123,6 +123,7 @@ body  {
   	float: none;
   }
 }
+
 
 @media screen and (max-height: 660px) {
 	.links  {
