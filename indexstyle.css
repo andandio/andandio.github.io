@@ -3,10 +3,31 @@ html  {
 }
 body  {
 
-	background-image: url("indeximage/indimage1.jpg.png"); 
+  background-image: url("indeximage/indimage1.jpg.png");
+  background-size: 100%
 
 }
+/*
+.main  {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  background-image: url("indeximage/indimage1.jpg.png")
+}
 
+.main img  {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+*/
 
 .links  {
 	float: left;
@@ -36,9 +57,9 @@ body  {
 	color: DarkCyan;
 }
 
-/*.links a:visited  {
+.links a:visited  {
 	color: IndianRed;
-}*/
+}
 
 #inner  {
 	border-style: none;
@@ -128,10 +149,11 @@ body  {
 		float: left;
 		margin-left: 5%;
 		margin-top: 5%;
+		margin-right: 0%
 	}
 	.tricontainer  {
 		margin-top: 0%;
-		margin-right: 5%;
+		margin-right: 2%;
 		margin-bottom: 5%;
 		float: right;
 
