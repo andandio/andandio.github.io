@@ -131,18 +131,16 @@ body  {
   .links  {
   	float: none;
   	width: 85%;
-    height: 74.858%;
+    height: 85%;
   	margin-right: auto;
   	margin-left: auto;
   	
   }
   .tricontainer  {
   	float: none;
-  	width: 80%;
-  	height: 80%;
   	margin-right: auto;
   	margin-left: auto;
-  	margin-top: 5;
+  	margin-top: 3%;
   }
  .triangle  {
  	
@@ -150,6 +148,7 @@ body  {
  	height: 43.9167%;
  	margin-right: auto;
  	margin-left: auto;
+ 	margin-top: 3%;
  }
 }
 
