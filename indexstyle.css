@@ -138,12 +138,14 @@ body  {
   }
   .tricontainer  {
   	float: none;
+  	width: 80%;
+  	height: 80%;
   	margin-right: auto;
   	margin-left: auto;
   	margin-top: 5;
   }
  .triangle  {
- 	position: static;
+ 	
  	width: 43.9167%;
  	height: 43.9167%;
  	margin-right: auto;
