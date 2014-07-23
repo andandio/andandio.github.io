@@ -143,9 +143,10 @@ body  {
   	margin-top: 3%;
   }
  .triangle  {
- 	
- 	width: 43.9167%;
- 	height: 43.9167%;
+
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-bottom: 150px solid aqua;
  	margin-right: auto;
  	margin-left: auto;
  	margin-top: 3%;
