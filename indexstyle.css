@@ -143,9 +143,9 @@ body  {
   	margin-top: 5;
   }
  .triangle  {
-
- 	width: 80%;
- 	height: 80%;
+ 	position: static;
+ 	width: 43.9167%;
+ 	height: 43.9167%;
  	margin-right: auto;
  	margin-left: auto;
  }
