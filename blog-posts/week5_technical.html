@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<link href="blog_stylesheets/week5tech.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+  <title> ah && a | DBC Blog</title>
+	<script type="text/javascript" src="http://w.sharethis.com/gallery/shareegg/shareegg.js"></script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "442a6d5b-5ebe-44eb-a17f-2bc2d0e07562", doNotHash: false, doNotCopy: false, hashAddressBar: false, onhover:false});</script>
+<link media='screen' type='text/css' rel='stylesheet' href='http://w.sharethis.com/gallery/shareegg/shareegg.css'></link>
+</head>
+<body>
+  
+  <div  id='shareThisShareEgg' class='shareEgg'></div>
+  <script type='text/javascript'>stlib.shareEgg.createEgg('shareThisShareEgg', ['sharethis','facebook','twitter','pinterest','email','googleplus'], {title:'ShareThis Rocks!!!',url:'http://www.sharethis.com',theme:'shareegg'});</script>	
+  <h1>ah</h1>
+  <section class = "carriage" > 
+    <div id = "top"><img src = "blog_images/blog_top.jpg.png" ></div>
+  	<article id = "txtbrick"><h3>Real-World Models</h3><p>Classes and Data Structures can easily be used to model real-world objects.  Classes are, by definition, first-class objects. They are open-ended, so by design they are breathable like real-world objects. They can have elements added to them in order
+to match changing technologies, or other structures, or business needs. They can grow and shrink.</p> 
+
+<p>Naming is an important element in modeling real-world objects. We can literally give objects a cyborg-stye reality by naming them and their functions and characteristics -- or attributes -- in classes.</p>
+
+<p><a id ="full">Check</a> out the example <a href = "#one"> below</a> to see how a class can model the planning and construction of a house. There are a limited number of style options for this program. It's just a simple example, but hopefully it illustrates the point: classes can mimic the world around us.</p>
+
+<p>You can see that the HouseBuilder object initializes much like the origin of a plan for an actual house, with arguments for the desired square footage as well as the style of house desired. </p>
+
+<p>Each Housebuilder object stores instance variables to hold those details that are intrinsic to its design. We want each method in the class to do only one thing ideally so that the program is as modular as possible. In other words, we want to be able to break a part of the class off with as little possible chance of breaking the whole thing as we can. </p>
+
+<p>Now <a id = "next">that</a> we have the basics stored in the HouseBuilder object, we want to create the <a href = "#three">floorplan</a>.  This will store the basic components of the house object in more instance variables.  In a refactor of this class, each of the instance variables stored in the floorplan could be expanded into subclasses all their own. A "beds" (bedroom) could be a subclass that inherits from a HouseBuilder and defines its own methods, like fenestration or flooring.  For this example though, we'll leave things a little simpler.</p>
+
+<p><a id ="and">At the top of the class, you'll see that another file is required here, the <a href= "#four">'HOUSE_TYPES' file</a>. I used this file to do all the work of storing the details for different styles of houses. That way, when it gets called to action in #features method, it can simply send a report back on design features for the desired type of house that's been assigned to our HouseBuilder object.
+<a id = "then">Finally,</a> we get the compiled plan for our new house in the #build_house method.  Check out the <a href="#five"> magic</a>.</p>
+
+<p>But wait! There's more!  What's our object doing in line 87 of the driver test code? it's calling a method that isn't in our class. This method <a id="last">belongs</a> to a module that we <a href= "#nine">included </a> in our class. This is an important (and sneaky) way in which Ruby allows us to use multiple chains of inheritance. We include a module with methods not specific to our object but that our object is allowed to call. This one takes a pair of coordinate points and tells us in what neighborhood in San Francisco our house will be situated. This method potentially works better as a module because it's not quite inside the realm of a house's construction, but it's also an important external component to consider. What's that? A mirror of real life, right? </p>  
+
+  
+</article>
+    <div class = "picspace">
+      
+      <a name = "one"></a>
+      <img src = "blog_images/code1.jpg.png" id = "pic">
+      <p> <a href = "#full"> Back to Text </a></p>
+      
+      <a name = "three"></a>
+      <img src = "blog_images/floorplan.jpg.png" id = "pic">
+      <p > <a href = "#next"> Back to Text </a></p>
+      
+      <a name="four"></a>
+      <img src = "blog_images/reqrel.jpg.png" id = "pic" >
+      <p> <a href = "#and"> Back to Text </a></p>
+      
+      <a name ="five"></a>
+      <img  src = "blog_images/driver_term.jpg.png" id = "pic" >
+      <p> <a href = "#then"> Back to Text </a></p>
+      
+      <a name = "nine"></a>
+      <img src = "blog_images/mod.jpg.png" id = "pic">
+      <p> <a href = "#last"> Back to Text </a></p>
+    </div>
+    <div id = "chain"><a href= "http://anderseverett.github.io/">- home -<a></div>  
+  </section>
+</body>
+</html>
