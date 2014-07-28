@@ -1,0 +1,89 @@
+html  {
+	font-family: 'Questrial', sans-serif;
+	
+}
+
+h1  {
+	
+	height: 55px;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	width: 900px;
+	font-size: 4em;
+	font-family: 'Questrial', sans-serif;
+
+}
+#shareThisShareEgg  {
+	float: right;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+
+body  {
+	background-color: Lemonchiffon;
+	margin: 0;
+	padding; 0;
+
+
+}
+ 
+.carriage {
+
+	height: 100%;
+	width: 100%;
+    border-top-style: solid;
+	border-top-color: aqua;
+}
+
+#txtbrick  {
+	background-color: #C2FFFF;
+	height: 400px;
+	width: 740px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    overflow: scroll; 
+    font-size: 1.5em;
+    border-style: solid;
+    border-color: aqua; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+
+
+}
+#quote  {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 70%;
+}
+#chain {
+  float: right;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  margin-top: 30px;
+  
+  margin-right: 80px;
+  margin-bottom: 80px;
+}
+
+#chain a:link  {
+  text-decoration: none;
+  color: black;
+
+}
+#chain a:hover  {
+  color: aqua;
+  font-size: 1.6em;
+}
+
+
+#pic {
+	width: 31.41%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+		
+}
+
