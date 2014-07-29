@@ -3,50 +3,47 @@ html  {
 }
 body  {
 
-  background-image: url("indeximage/indimage1.jpg.png");
+  background-image: url("practindeximage.jpg.png");
   background-size: 100%
 
 }
-/*
-.main  {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 200%;
-  background-image: url("indeximage/indimage1.jpg.png")
-}
 
-.main img  {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
-}
-*/
+
+.main  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 460px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 9%;
+  background:rgba(255,255,255,0.85);
+}  
 
 .links  {
-	float: left;
+	background-color: white;
 	height: 300px;
 	width: 300px;
 	border-style: solid;
-	border-color: aqua;
+	border-color: Black;
 	border-radius: 50%;
-	border-width: 20px;
+	border-width: 6px;
 	text-align: center;
 	vertical-align: middle;
-	background-color: AntiqueWhite;
-	margin-left: 15%;
-	margin-top: 10%;
+	margin: auto;
 	font-weight: 100;
-	font-size: 2.07em;
+	font-size: 2.10em;
+	
+}
+#inner1  {
+	
+	border-style: none;
+	border-radius: 50%;
+	margin-top: 22%;
+	line-height: 33px;
 }
 .links a {
-	color: DarkSlateGray;
+	color: Black;
 }
 
 .links a:link  {
@@ -57,74 +54,68 @@ body  {
 	color: DarkCyan;
 }
 
-.links a:visited  {
-	color: IndianRed;
+
+.links2  {
+	background-color: #FFDCDC;
+
+	height: 300px;
+	width: 300px;
+	border-style: solid;
+	border-color: Black;
+	border-radius: 50%;
+	border-width: 6px;
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
 }
 
-#inner  {
+.links2 img {
+   
+   height: 300px;
+   width: 300px;
+   border-radius: 50%; 
+
+}
+
+
+.links3  {
+	background-color: white;
+
+	height: 300px;
+	width: 300px;
+	border-style: solid;
+	border-color:  Black;
+	border-radius: 50%;
+	border-width: 6px;
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+	font-weight: 100;
+	font-size: 2.10em;
+	
+}
+.links3 a {
+	color: Black;
+}
+
+.links3 a:link  {
+	text-decoration: none;
+}
+
+.links3 a:hover  {
+	color: DarkCyan;
+}
+
+
+
+
+
+#inner3  {
+	
 	border-style: none;
 	border-radius: 50%;
 	margin-top: 22%;
 	line-height: 33px;
-}
-
-
-.tricontainer  {
-	float: right;
-	margin-right: 100px;
-	
-}
-
-.triangle  {
-
-    position: relative;
-	width: 0;
-	height: 0;
-	border-left: 150px solid transparent;
-	border-right: 150px solid transparent;
-	border-bottom: 300px solid aqua;
-	margin-top: 25px;
-
-}
-
-.def {
-	width: 200px;
-	position: absolute;
-	top: 240px;
-	left: -100px;
-	text-align: center;
-	font-size: 1.12em;
-}
-.archiveli  {
-	position: absolute;
-	top: 165px;
-	left: -73.5px;
-	height: 85px;
-	width: 146px;
-	background-color: aqua;
-	margin-right: 50%;
-	overflow: scroll;
-    
-}
-.archiveli li  {
-	
-	list-style-type: none;
-}
-.archiveli a:link  {
-	color: DarkSlateGray;
-	text-decoration: none;
-}
-.archiveli a:hover  {
-	color: DarkCyan;
-}
-#i8  {
-	margin-left: -8px;
-}
-#i11  {
-	margin-left: -15px;
-}
-#i14  {
-	margin-left: -20px;
 }
 
 @media screen and (min-device-width: 1px) and (max-device-width: 359px)  {
