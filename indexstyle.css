@@ -18,7 +18,7 @@ body  {
   margin: 0 auto;
   margin-top: 9%;
   background:rgba(255,255,255,0.85);
- /* border-radius: 30%;*/
+  border-radius: 15%;
 }  
 
 .links  {
@@ -36,24 +36,56 @@ body  {
 	font-size: 2.10em;
 	
 }
-#inner1  {
+#nav1 ul {
 	
 	border-style: none;
 	border-radius: 50%;
-	margin-top: 22%;
-	line-height: 33px;
+	margin-top: 45%;
+	margin-left: -12%;
 }
-.links a {
+#nav1 ul li  {
+	position: relative;
+	list-style: none;
 	color: Black;
+	
 }
-
-.links a:link  {
-	text-decoration: none;
+#nav1 ul li ul {
+	display: none;
+	background: White; padding: 3;
+	position: absolute; top: 100%;
+	border-radius: 0%;	
 }
-
-.links a:hover  {
+#nav1:hover  {
 	color: DarkCyan;
 }
+
+#nav1:hover ul li ul{
+	position: static;
+	display:block;
+	margin-top: 15px;
+	margin-left: 15%;
+}
+
+#nav1 ul li ul {
+	
+	list-style: none;
+	font-size: .55em;
+	text-align: left;
+
+}
+#nav1 ul li ul li  {
+	display: block;
+	padding-top: 10px;
+	margin-left: -10%;
+}
+#nav1 ul li ul li a  {
+	text-decoration: none;
+	color: DarkCyan;
+}
+#nav1 ul li ul li a:hover  {
+	color: Brown;
+}
+
 
 
 .links2  {
@@ -95,29 +127,65 @@ body  {
 	font-size: 2.10em;
 	
 }
-.links3 a {
-	color: Black;
-}
 
-.links3 a:link  {
-	text-decoration: none;
-}
-
-.links3 a:hover  {
-	color: DarkCyan;
-}
-
-
-
-
-
-#inner3  {
+#nav2 ul {
 	
 	border-style: none;
 	border-radius: 50%;
-	margin-top: 22%;
-	line-height: 33px;
+	margin-top: 45%;
+	margin-left: -12%;
+	
 }
+#nav2 ul li  {
+	position: relative;
+	list-style: none;
+	color: Black;
+	
+}
+
+#nav2 ul li ul {
+	display: none;
+	background: White; padding: 3;
+	position: absolute; top: 100%;
+	border-radius: 0%;
+	
+	
+}
+#nav2:hover  {
+	color: DarkCyan;
+}
+
+#nav2:hover ul li ul{
+	position: static;
+	display:block;
+	margin-top: 15px;
+	margin-left: 15%;
+}
+
+#nav2 ul li ul {
+	
+	list-style: none;
+	font-size: .55em;
+	text-align: left;
+
+}
+#nav2 ul li ul li  {
+	display: block;
+	padding-top: 10px;
+	margin-left: -10%;
+}
+#nav2 ul li ul li a  {
+	text-decoration: none;
+	color: DarkCyan;
+}
+#nav2 ul li ul li a:hover  {
+	color: Brown;
+}
+
+
+
+
+
 
 @media screen and (min-device-width: 1px) and (max-device-width: 359px)  {
   .links  {
