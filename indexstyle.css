@@ -16,12 +16,13 @@ body  {
   height: 460px;
   width: 90%;
   margin: 0 auto;
-  margin-top: 9%;
+  margin-top: 6%;
   background:rgba(255,255,255,0.85);
   border-radius: 15%;
 }  
 
 .links  {
+	
 	background-color: white;
 	height: 300px;
 	width: 300px;
@@ -34,7 +35,14 @@ body  {
 	margin: auto;
 	font-weight: 100;
 	font-size: 2.10em;
+
 	
+}
+
+#nav1  {
+	
+	
+
 }
 #nav1 ul {
 	
@@ -42,6 +50,7 @@ body  {
 	border-radius: 50%;
 	margin-top: 45%;
 	margin-left: -12%;
+
 }
 #nav1 ul li  {
 	position: relative;
@@ -50,37 +59,46 @@ body  {
 	
 }
 #nav1 ul li ul {
+	
 	display: none;
 	background: White; padding: 3;
+	background:rgba(255,255,255,0.85);
 	position: absolute; top: 100%;
-	border-radius: 0%;	
-}
-#nav1:hover  {
-	color: DarkCyan;
-}
-
-#nav1:hover ul li ul{
-	position: static;
-	display:block;
-	margin-top: 15px;
-	margin-left: 15%;
-}
-
-#nav1 ul li ul {
-	
-	list-style: none;
+	border-radius: 50%;	
+	/*border-style: dotted;*/
+	overflow: scroll;
+    list-style: none;
 	font-size: .55em;
 	text-align: left;
 
+
 }
+
+
+#nav1:hover ul li ul  {
+	position: static;
+	display:block;
+	margin-top: 15px;
+	margin-left: 50px;
+	height: 340px;
+	width: 340px;
+	overflow: scroll;
+
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
 #nav1 ul li ul li  {
 	display: block;
 	padding-top: 10px;
-	margin-left: -10%;
+	margin-left: 15%;
+	
 }
 #nav1 ul li ul li a  {
 	text-decoration: none;
-	color: DarkCyan;
+	color: Navy;
 }
 #nav1 ul li ul li a:hover  {
 	color: Brown;
@@ -146,37 +164,35 @@ body  {
 #nav2 ul li ul {
 	display: none;
 	background: White; padding: 3;
+	background:rgba(255,255,255,0.85);
 	position: absolute; top: 100%;
-	border-radius: 0%;
-	
+	border-radius: 50%;	
+	overflow: scroll;
+    list-style: none;
+	font-size: .55em;
+	text-align: left;	
 	
 }
-#nav2:hover  {
-	color: DarkCyan;
-}
+
 
 #nav2:hover ul li ul{
 	position: static;
 	display:block;
 	margin-top: 15px;
-	margin-left: 15%;
+	margin-left: 50px;
+	height: 340px;
+	width: 340px;
+	overflow: scroll;
 }
 
-#nav2 ul li ul {
-	
-	list-style: none;
-	font-size: .55em;
-	text-align: left;
-
-}
 #nav2 ul li ul li  {
 	display: block;
 	padding-top: 10px;
-	margin-left: -10%;
+	margin-left: 15%;
 }
 #nav2 ul li ul li a  {
 	text-decoration: none;
-	color: DarkCyan;
+	color: Navy;
 }
 #nav2 ul li ul li a:hover  {
 	color: Brown;
