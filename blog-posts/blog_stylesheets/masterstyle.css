@@ -29,16 +29,14 @@ body  {
 
 
 }
-#name  {
-	margin: 0 auto;
-	font-size: 20em;
-	text-align: center;
+
+span {
+ 
+ margin-left: 12.5%;
+ font-size: 20em;
+
+  
 }
-/*span {
-  margin: 0 auto;
-  
-  
-}*/
 
 #txtbrick  {
 	position: relative;
@@ -90,7 +88,9 @@ body  {
   font-size: 1.6em;
 }
 
-
+#image  {
+	text-align: center;
+}
 #pic {
 	width: 31.41%;
 	margin-left: auto;
