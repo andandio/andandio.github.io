@@ -1,0 +1,61 @@
+<DOCTYPE!>
+<html lang="en">
+<head>
+	<title>JS Prototypes</title>
+	<link rel="stylesheet" href="blog_stylesheets/cheatstyle.css">
+	<meta charset="utf-8">
+
+</head>
+
+<body>
+	<header>
+		<h1>Javascript Prototyping</h1>
+	</header>	
+	<section>
+		<aside id="sidebar">
+			<h3>Other Cheatsheets</h3>
+			<a href="http://www.w3.org/TR/CSS2/propidx.html">CSS Properties</a><br>
+			<a href="http://rubular.com/r/g6s9bQpNnC">Ruby Regular Expressions</a><br>
+			<a href="http://www.zenspider.com/Languages/Ruby/QuickRef.html">Ruby Quick Ref</a><br>
+			<a href="http://natashatherobot.com/ruby-shorthands-if-then-else/">Short If/Else Statements</a><br>
+			<a href="http://www.sitepoint.com/10-jquery-cheat-sheets/">Jquery Cheatsheet</a><br>
+			<a href="http://www.dummies.com/how-to/content/selected-javascript-syntax.html">Javascript Syntax</a>			
+
+		</aside>
+		<article id="content">
+			<ul>
+				<li>A prototype is a container for properties that are shared by all of its instances.</li>
+				<li>You can use Object.create(); to create an object with a specific prototype.</li>
+				<li>All objects have can have prototypes.</li>
+				<li>To find the prototype of an object use: Object.getPrototypeOf()</li>
+				<li>Every Javascript function has a prototype property by default and properties and methods can be attached onto it.</li>
+				<li>The prototype property is not enumberable, so it is not accessible in for/in loops.</li>
+				<li>Prototype chain provides the objects internal links to other objects.</li>
+				<li>Prototype attributes act as a characteristic of an object and tells us the objects "parent" or where the object inherited its properties from.</li>
+				<li>Use method overriding to override a prototypes inherited functions.</li>
+				<li>When an objects property is accessed and the interpreter can't find it, it follows the protolink and searches the prototype.</li>
+				<li>Prototype is important in JavaScript because JavaScript does not have classical inheritance based on Classes, therefore all inheritance in JavaScript is made possible through the prototype property.</li>
+				<li>Every object instance in JavaScript has a property named constructor, that points to its parent class.</li>
+
+			</ul>
+		</article>
+		<article id="example">
+			<img src="blog_images/inheritance.png" alt="Prototype Inheritance in Action">
+		</article>
+
+	</section>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>
