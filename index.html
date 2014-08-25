@@ -1,70 +1,62 @@
----
-layout: post-index
-<!-- title: Latest Posts -->
-description: My DBC blog of transformation and discovery.
-tags: [Jekyll, theme, themes, responsive, blog, modern, DBC, discovery]
-image:
-  feature: main2.jpg.png
-  credit: Peter Trevelyan
-  creditlink: http://www.bartleyandcompanyart.co.nz/artist.php?artistID=3943
----
+<!doctype html>
+<html>
+<head>
+  <link href ="indexstyle.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+  <title> ah && a | DBC Blog</title>
+  <link rel="shortcut icon" type="image/x-icon" href="indeximage/favicon1b.ico" />
+</head>
+<body>
+  <section class = "main">
 
-{% for post in paginator.posts %}
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span><span class="author vcard"><span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>{% if site.disqus_shortname and post.comments %}&nbsp; &bull; &nbsp;<span class="entry-comments"><a href="{{ site.url }}{{ post.url }}#disqus_thread">Comment</a></span>{% endif %}
-      {% if site.reading_time %}
-      <span class="entry-reading-time pull-right">
-        <i class="fa fa-clock-o"></i>
-        {% assign readtime = post.content | number_of_words | divided_by:site.words_per_minute %}
-        Reading time ~{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
-      </span><!-- /.entry-reading-time -->
-      {% endif %}
-    </div><!-- /.entry-meta -->
-    {% if post.link %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}"><i class="fa fa-angle-double-right"></i></a> <a href="{{ post.link }}">{{ post.title }}</a></h1>
-    {% else %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a></h1>
-    {% endif %}
-  </header>
-  <div class="entry-content">
-    {{ post.content }}
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-{% endfor %}
-
-<div class="pagination">
-  {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-      <a href="{{ site.url }}" class="btn">Previous</a>
-    {% else %}
-      <a href="{{ site.url }}/page{{ paginator.previous_page }}" class="btn">Previous</a>
-    {% endif %}
-  {% else %}
-    Previous
-  {% endif %}
-  <ul class="inline-list">
-    <li>
-      {% if paginator.page == 1 %}
-        <span class="current-page">1</span>
-      {% else %}
-        <a href="{{ site.url }}">1</a>
-      {% endif %}
-    </li>
-    {% for count in (2..paginator.total_pages) %}
-      <li>
-        {% if count == paginator.page %}
-          <span class="current-page">{{ count }}</span>
-        {% else %}
-          <a href="{{ site.url }}/page{{ count }}">{{ count }}</a>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-  {% if paginator.next_page %}
-    <a href="{{ site.url }}/page{{ paginator.next_page }}" class="btn">Next</a>
-  {% else %}
-    Next
-  {% endif %}
-</div><!-- /.pagination -->
+    <article class= "links">
+      <article id ="nav1">
+        <ul>
+          <li>Technical Archive 
+            <ul>
+              <li></li>
+              <li><a href = "http://anderseverett.github.io/blog-posts/unit3_cheatsheet.html">JS Prototype Cheatsheet</a></li>
+              <li><a href ="http://anderseverett.github.io/blog-posts/week8_technical.html">Dynamic vs. Strong, how Languages Shift</a></li>
+              <li><a href ="http://anderseverett.github.io/blog-posts/week7_technical.html">SQL Optimization</a></li>
+              <li><a href ="http://anderseverett.github.io/blog-posts/week6_technical.html#imgfive">Class Methods</a></li>
+              <li><a href ="http://anderseverett.github.io/blog-posts/week5_technical.html#imgfive">Classes: Real-World Models</a></li>
+              <li><a href ="http://anderseverett.github.io/blog-posts/week4_technical.html#imgfive">Loops</a></li>
+              <li><a href ="http://anderseverett.github.io/blog-posts/week3_technical.html#imgfive">Javascript</a></li>
+              <li><a href ="http://anderseverett.github.io/blog-posts/week2_technical.html#imgfive">CSS Positioning</a></li>
+              <li><a href ="http://anderseverett.github.io/blog-posts/week1_technical.html">Websites</a></li>
+              <li></li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+    </article>
+    <article class= "links2">
+          <img src = "indeximage/ind3.jpg.png" >
+       
+        <!-- <div class = "circle2">
+          <img src = "ind4.jpg.png" >
+        </div> -->
+    </article>
+    <article class= "links3">
+      <article id ="nav2">
+        <ul>
+          <li>Cultural Archive
+            <ul>
+              <li></li>
+              <li></li>
+              <li><a href = "http://anderseverett.github.io/blog-posts/week8_cultural.html">Conflict, the Shame Spin</a></li>
+              <li><a href ="http://anderseverett.github.io/blog-posts/week7_cultural.html">Values</a></li>
+              <li><a href = "http://anderseverett.github.io/blog-posts/week6_cultural.html">Stereotype Threat</a></li>
+              <li><a href = "http://anderseverett.github.io/blog-posts/week5_cultural.html">Peer Pairing</a></li>
+              <li><a href = "http://anderseverett.github.io/blog-posts/week4_cultural_blog.html">The Tech Shuttle Bus</a></li>
+              <li><a href = "http://anderseverett.github.io/blog-posts/week3_cultural.html">Thinking Styles</a></li>
+              <li><a href = "http://anderseverett.github.io/blog-posts/week1_cultural.html">On Fireside</a></li>
+              <li></li>
+            </ul> 
+          </li>   
+        </ul>
+      </article>
+    </article>
+    
+  </section>
+</body></html>
