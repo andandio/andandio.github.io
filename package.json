@@ -14,5 +14,5 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
-  "homepage" : "http://andandio.github.io"
+  "homepage" : "http://andandio.github.io/"
 }
