@@ -77,6 +77,12 @@ a:visited {
   border-bottom: 1px solid #f88379;
 }
 
+.contact {
+  margin-top: 60px;
+  text-align: right;
+
+}
+
 /*mobile */
 .item {
 
