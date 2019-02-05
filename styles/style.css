@@ -216,4 +216,16 @@ label.message {
   img {
     width: 80%;
   }
+
+  #podcast-img img{
+    width: 350px;
+  }
+
+  .skill-right {
+    text-align: left;
+  }
+
+  td.site {
+    width: 100%;
+  }
 }
