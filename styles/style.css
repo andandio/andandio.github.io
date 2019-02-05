@@ -147,6 +147,7 @@ td.site {
   font-size: 0.75em;
 }
 
+<<<<<<< Updated upstream
 /*contact */
 .form-container {
   width: 33%;
@@ -205,3 +206,14 @@ label.message {
 
 
 
+/*mobile*/
+@media (max-width: 700px) {
+  td {
+    display: table;
+    width: 100%;
+  }
+
+  img {
+    width: 80%;
+  }
+}
