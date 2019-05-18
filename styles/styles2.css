@@ -1,14 +1,29 @@
 polygon:hover {
   opacity: 0.6;
   transition: .2s;
+  fill: #f4d742;
+  /*fill: #FD7133;*/
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
+  /*font-family: 'Montserrat Subrayada', sans-serif;*/
+  font-family: 'Major Mono Display', monospace;
+
   letter-spacing: 4px;
+}
+
+.title {
+  position: fixed;
+  text-align: center;
+  margin-top: 150px;
+  top: 0;
+  width: 100%;
+  font-size: 7em;
+  font-weight: 800;
+  color: white;
+  text-shadow: 12px 12px #f4d742;
 }
 
 .navigation {
@@ -41,6 +56,13 @@ li {
   list-style: none;
   font-size: 1.5em;
   line-height: 1.8em;
+}
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 4em;
+    text-shadow: 8px 8px #f4d742;
+  }
 }
 
 
