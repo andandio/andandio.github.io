@@ -1,0 +1,46 @@
+polygon:hover {
+  opacity: 0.6;
+  transition: .2s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+.navigation {
+  visibility: hidden;
+  position: fixed;
+  top: 10;
+  right: 10;
+  width: 200px;
+  height: 220px;
+  background-color: #fc7871;
+}
+
+.navigation .open {
+  visibility: visible;
+}
+
+a {
+  color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+li {
+  list-style: none;
+  font-size: 1.5em;
+  line-height: 1.8em;
+}
+
+
