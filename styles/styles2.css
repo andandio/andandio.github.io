@@ -1,7 +1,7 @@
 polygon:hover {
   opacity: 0.6;
   transition: .2s;
-  fill: #f4d742;
+  fill: #fed65e;
   /*fill: #FD7133;*/
 }
 
@@ -23,7 +23,11 @@ body {
   font-size: 7em;
   font-weight: 800;
   color: white;
-  text-shadow: 12px 12px #f4d742;
+  text-shadow: 12px 12px #fed65e;
+}
+
+.title span {
+  text-shadow: 12px 12px #5F4B8B;
 }
 
 .navigation {
