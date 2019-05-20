@@ -12,7 +12,7 @@ h2  {
 }
 
 #title:hover {
-  border-bottom: 1px solid #f88379;
+  border-bottom: 1px solid #1E3232;
 }
 
 .container {
@@ -46,6 +46,7 @@ li {
   margin-top: 60px;
   text-align: center;
   padding-top: 30px;
+  font-family: 'Major Mono Display', monospace;;
 }
 
 a {

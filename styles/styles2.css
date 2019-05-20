@@ -21,9 +21,9 @@ body {
   top: 0;
   width: 100%;
   font-size: 8em;
-  font-weight: 800;
-  color: white;
-  text-shadow: 12px 12px #463663;
+  font-weight: 500;
+  color: #1E3232;
+  text-shadow: 12px 12px black;
 }
 
 
@@ -66,7 +66,13 @@ li {
 @media (max-width: 700px) {
   .title {
     font-size: 4em;
-    text-shadow: 8px 8px #f4d742;
+    text-shadow: 8px 8px black;
+  }
+
+  .nav-item {
+    display: block;
+    line-height: 1.2em;
+    text-align: left;
   }
 }
 
