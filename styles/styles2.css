@@ -17,10 +17,10 @@ body {
 .title {
   position: fixed;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 40vh;
   top: 0;
   width: 100%;
-  font-size: 7em;
+  font-size: 8em;
   font-weight: 800;
   color: white;
   text-shadow: 12px 12px #463663;
@@ -29,17 +29,16 @@ body {
 
 
 .navigation {
-  visibility: hidden;
   position: fixed;
+  width: 100%;
   top: 10;
-  right: 10;
-  width: 200px;
-  height: 220px;
-  background-color: #fc7871;
+  color: black;
 }
 
-.navigation .open {
-  visibility: visible;
+.nav-item {
+  display: inline-block;
+  width: 32%;
+  text-align: center;
 }
 
 a {
@@ -52,6 +51,10 @@ a:link {
 
 a:visited {
   color: black;
+}
+
+ul {
+  width: 100%;
 }
 
 li {
