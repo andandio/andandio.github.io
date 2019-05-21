@@ -148,11 +148,10 @@ td.site {
   font-size: 0.75em;
 }
 
-<<<<<<< Updated upstream
 /*contact */
 .form-container {
   width: 33%;
-  margin: 0 auto;
+  margin-left: 33%;
   text-align: center;
 }
 
@@ -172,6 +171,8 @@ form {
 
 
 form input {
+  height: 30px;
+  width: 200px;
   border-radius: 5px;
 }
 
@@ -182,7 +183,7 @@ input:focus {
 }
 
 textarea {
-  width: ;
+  width: 338px;
   border-radius: 5px;
 }
 
@@ -209,6 +210,20 @@ label.message {
 
 /*mobile*/
 @media (max-width: 700px) {
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+  .form-container {
+    width: 33%;
+    margin-left: 10%;
+  }
+
+  textarea {
+    width: 270px;
+  }
+
   td {
     display: table;
     width: 100%;
