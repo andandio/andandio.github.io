@@ -15,14 +15,20 @@ const useStyles = makeStyles((theme: Theme) =>
       left: 0
     },
     box: {
-      marginTop: "150px",
+      marginTop: "15%",
       textAlign: "center"
     },
     name: {
       fontSize: "4rem",
-      fontFamily: 'Poppins, sans-serif',
+      fontFamily: 'IBM Plex Mono, monospace',
+      marginBottom: "15px",
+      "& a": {
+        textDecoration: "none",
+        color: "#000000"
+      }
     },
     tagLine: {
+      marginTop: "15px",
       fontFamily: "IBM Plex Mono, monospace",
       fontWeight: 100,
       fontSize: "1.5rem",
@@ -69,8 +75,8 @@ export default function Homepage(props) {
     <HomepageContainer>
       <SideLine className={classes.leftBar}/>
       <Box m="0 auto" p={2} width={"50%"} height="50%" className={classes.box}>
-        <h1 className={classes.name}>ANDERS O. E.<br/>HOWERTON</h1>
-        <h4 className={classes.tagLine}>innovation + solutions</h4>
+        <h1 className={classes.name}><a href="https://www.linkedin.com/in/andershowerton/">ANDERS E. HOWERTON</a></h1>
+        <h4 className={classes.tagLine}>software engineer / web developer</h4>
         <Button onClick={() => {toggleContactMode(true)}}>CONTACT</Button>
       </Box>
       <img className={classes.logo} src={logo} />
