@@ -4,6 +4,7 @@ import { styled, createStyles, makeStyles, Theme } from '@material-ui/core/style
 import Box from '@material-ui/core/Box';
 import { Button } from '@material-ui/core';
 import Contact from './Contact'
+import logo from '../assets/images/instant-object-logo.svg'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -27,7 +28,12 @@ const useStyles = makeStyles((theme: Theme) =>
       fontSize: "1.5rem",
       letterSpacing: "0.3rem"
     },
-
+    logo: {
+      height: "180px",
+      position: "absolute",
+      left: "50px",
+      top: "0"
+    }
   })
 )
 
@@ -67,6 +73,7 @@ export default function Homepage(props) {
         <h4 className={classes.tagLine}>innovation + solutions</h4>
         <Button onClick={() => {toggleContactMode(true)}}>CONTACT</Button>
       </Box>
+      <img className={classes.logo} src={logo} />
       <SideLine className={classes.rightBar}/>
       {renderContactForm()}
     </HomepageContainer>

@@ -18,7 +18,9 @@ const useStyles = makeStyles((theme: Theme) =>
       opacity: "1.0"
     },
     close: {
-      marginLeft: "35px",
+      position: "absolute",
+      top: "20px",
+      right: "35px",
     },
     nameEmail: {
       display: "flex",
