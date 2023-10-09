@@ -24,7 +24,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh -d build"
+    "deploy": "gh-pages -b gh -d build",
+    "format": "npx prettier --write ."
   },
   "eslintConfig": {
     "extends": [
@@ -44,5 +45,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://andandio.github.io"
+  "homepage": "https://andandio.github.io",
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  }
 }
