@@ -1,87 +1,106 @@
 import React from 'react';
 import { useState } from 'react';
-import { styled, createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
-import { Button } from '@material-ui/core';
-import Contact from './Contact'
-import logo from '../assets/images/instant-object-logo.svg'
+import { Box, Button, Typography } from '@mui/material';
+import { styled } from '@mui/system';
+import Contact from './Contact';
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    rightBar: {
-      right: 0,
+const styles = {
+  box: {
+    marginTop: '20px',
+  },
+  name: {
+    fontSize: '1.5rem',
+    fontFamily: 'IBM Plex Mono, monospace',
+    '& a': {
+      textDecoration: 'none',
+      color: '#000000',
     },
-    leftBar: {
-      left: 0
+  },
+  tagLine: {
+    fontFamily: 'Montserrat, sans-serif',
+    fontWeight: 100,
+    fontSize: '2.5rem',
+    letterSpacing: '0.1rem',
+    color: '#333333',
+  },
+  button: {
+    color: '#805da6',
+    fontWeight: 'bold',
+  },
+  portfolioItem: {
+    '& a': {
+      fontSize: '3.5rem',
+      fontFamily: 'Montserrat, sans-serif',
+      textDecoration: 'none',
+      color: '#333333',
     },
-    box: {
-      marginTop: "15%",
-      textAlign: "center"
-    },
-    name: {
-      fontSize: "4rem",
-      fontFamily: 'IBM Plex Mono, monospace',
-      marginBottom: "15px",
-      "& a": {
-        textDecoration: "none",
-        color: "#000000"
-      }
-    },
-    tagLine: {
-      marginTop: "15px",
-      fontFamily: "IBM Plex Mono, monospace",
-      fontWeight: 100,
-      fontSize: "1.5rem",
-      letterSpacing: "0.3rem"
-    },
-    logo: {
-      height: "180px",
-      position: "absolute",
-      left: "50px",
-      top: "0"
-    }
-  })
-)
+  },
+};
 
 const HomepageContainer = styled('div')({
-  width: "100vw",
-  height: "100vh",
-  position: "fixed"
+  width: '100vw',
+  height: '100vh',
+  padding: '40px',
+  backgroundColor: '#f7ede2',
 });
 
-const SideLine = styled('div')({
-  position: "absolute",
-  top: 0,
-  width: "30px",
-  height: "100%",
-  backgroundColor: "#00ff00"
-});
-
-export default function Homepage(props) {
-  const classes = useStyles();
-  const [contactMode, toggleContactMode] = useState(false)
+const Homepage = (props) => {
+  const [contactMode, toggleContactMode] = useState(false);
 
   const renderContactForm = () => {
     if (contactMode) {
       return (
-        <Contact closeForm={() => {toggleContactMode(false)}}/>
-      )
+        <Contact
+          closeForm={() => {
+            toggleContactMode(false);
+          }}
+        />
+      );
     } else {
-      return null
+      return null;
     }
-  }
+  };
 
   return (
     <HomepageContainer>
-      <SideLine className={classes.leftBar}/>
-      <Box m="0 auto" p={2} width={"50%"} height="50%" className={classes.box}>
-        <h1 className={classes.name}><a href="https://www.linkedin.com/in/andershowerton/">ANDERS E. HOWERTON</a></h1>
-        <h4 className={classes.tagLine}>software engineer / web developer</h4>
-        <Button onClick={() => {toggleContactMode(true)}}>CONTACT</Button>
+      <Box sx={styles.box}>
+        <Typography component="h1" sx={styles.name}>
+          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/andershowerton/">
+            ANDERS E. HOWERTON
+          </a>
+        </Typography>
+        <Typography component="h4" sx={styles.tagLine}>
+          FULL-STACK SOFTWARE ENGINEER
+        </Typography>
+        <Button
+          sx={styles.button}
+          onClick={() => {
+            toggleContactMode(true);
+          }}
+        >
+          CONTACT
+        </Button>
       </Box>
-      <img className={classes.logo} src={logo} />
-      <SideLine className={classes.rightBar}/>
+      <Box mt={4}>
+        <Typography sx={styles.portfolioItem}>
+          <a target="_blank" rel="noreferrer" href="https://respuestavenezolanos.iom.int/en/platform-r4v">
+            R4V PLATFORM
+          </a>
+        </Typography>
+        <Typography sx={styles.portfolioItem}>
+          <a target="_blank" rel="noreferrer" href="https://astrologyfordays.com/">
+            ASTROLOGY FOR DAYS
+          </a>
+        </Typography>
+        <Typography sx={styles.portfolioItem}>
+          <a target="_blank" rel="noreferrer" href="https://apps.apple.com/us/app/tiny-spark/id1437934449">
+            TINY SPARK
+          </a>
+        </Typography>
+      </Box>
       {renderContactForm()}
     </HomepageContainer>
-  )
-}
+  );
+};
+
+export default Homepage;
