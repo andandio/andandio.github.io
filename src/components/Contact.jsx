@@ -1,55 +1,64 @@
 // https://formspree.io/anders.e.howerton@gmail.com
 import React from 'react';
 import { useState } from 'react';
-import { styled, createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
-import { TextField, Button } from '@material-ui/core';
-import CloseIcon from '@material-ui/icons/Close';
+import { Box, TextField, Button } from '@mui/material';
+import { styled } from '@mui/system';
+import CloseIcon from '@mui/icons-material/Close';
 import { useForm, ValidationError } from '@formspree/react';
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    formContainer: {
-      width: "40%",
-      height: "80%",
-      margin: "0 auto",
-      marginTop: "10%",
-      background: "rgba(255, 255, 255, 1.0)",
-      opacity: "1.0"
-    },
-    close: {
-      position: "absolute",
-      top: "20px",
-      right: "35px",
-    },
-    nameEmail: {
-      display: "flex",
-      justifyContent: "space-between",
-      "& > div": {
-        width: "48%"
-      }
+const styles =  {
+  formContainer: {
+    width: "100%",
+    height: "80%",
+    padding: "20px",
+    marginTop: "8%",
+    background: "#f7ede2",
+    opacity: "1.0",
+    "& h2": { 
+      fontFamily: "Montserrat, sans-serif",
+      color: "#333333"
+    }
+  },
+  close: {
+    position: "absolute",
+    top: "20px",
+    right: "35px",
+    cursor: "pointer"
+  },
+  nameEmail: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-start",
+    gap: "20px",
+    "& > div": {
+      width: "43%"
+    }
 
+  },
+  message: {
+    marginTop: "20px",
+    width: "80%"
+  },
+  button: {
+    width: "200px",
+    height: "40px",
+    marginTop: "20px",
+    background: "#805da6",
+    "&hover": {
+      background: "#805da6",
     },
-    message: {
-      marginTop: "20px",
-      width: "100%"
-    },
-    button: {
-      width: "70%",
-      marginLeft: "15%",
-      marginTop: "20px",
-      "& span": {
-        fontFamily: "IBM Plex Mono, monospace",
-      }
-    },
-    ty: {
-      width: "50%",
-      margin: "0 auto",
-      textAlign: "center",
+    "& span": {
       fontFamily: "IBM Plex Mono, monospace",
     }
-  })
-)
+  },
+  ty: {
+    width: "50%",
+    margin: "0 auto",
+    textAlign: "center",
+    fontFamily: "IBM Plex Mono, monospace",
+  }
+}
+
 
 const ContactContainer = styled('div')({
   position: "fixed",
@@ -60,14 +69,13 @@ const ContactContainer = styled('div')({
 });
 
 export default function Contact(props) {
-  const classes = useStyles();
   const closeForm = props.closeForm
   const [name, setName] = useState("")
   const [messageValue, setMessageValue] = useState("")
   const [email, setEmail] = useState("")
   const [submitState, handleSubmit] = useForm("xeqvvael");
   if (submitState.succeeded) {
-      return <p className={classes.ty}>Thanks for reaching out!</p>;
+      return <Box component="p" sx={styles.ty}>Thanks for reaching out!</Box>;
   }
 
   const handleMessageChange = (event) => {
@@ -92,13 +100,13 @@ export default function Contact(props) {
 
   return (
     <ContactContainer>
-      <CloseIcon className={classes.close} onClick={closeForm} fontSize='large'/>
-      <div className={classes.formContainer}>
+      <CloseIcon sx={styles.close} onClick={closeForm} fontSize='large'/>
+      <Box sx={styles.formContainer}>
         <h2>Get in touch.</h2>
         <form id="contact-anders"
               noValidate autoComplete="off"
               onSubmit={handleSubmit}>
-          <div className={classes.nameEmail}>
+          <Box sx={styles.nameEmail}>
             <TextField id="contact-name"
                        label="Name" variant="outlined"
                        value={name}
@@ -112,10 +120,10 @@ export default function Contact(props) {
                        onChange={handleEmailChange}
                        required={true}
                        name="email"/>
-          </div>
-          <div><TextField
+          </Box>
+          <Box><TextField
             id="contact-message"
-            className={classes.message}
+            sx={styles.message}
             label="Message"
             multiline
             rows={6}
@@ -124,15 +132,15 @@ export default function Contact(props) {
             variant="outlined"
             required={true}
             name="message"
-          /></div>
+          /></Box>
           <Button variant="contained"
-                  className={classes.button}
+                  sx={styles.button}
                   type="submit"
                   form="contact-anders"
                   disabled={submitState.submitting}
                 >SEND</Button>
         </form>
-      </div>
+      </Box>
     </ContactContainer>
   )
 }
