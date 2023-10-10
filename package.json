@@ -47,6 +47,7 @@
   },
   "homepage": "https://andandio.github.io",
   "devDependencies": {
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "@babel/plugin-transform-private-property-in-object": "7.22.11"
   }
 }
