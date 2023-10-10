@@ -32,13 +32,13 @@ const styles = {
     gap: '20px',
     '& > div': {
       width: '43%',
-      maxWidth: '350px'
+      maxWidth: '350px',
     },
   },
   message: {
     marginTop: '20px',
     width: '80%',
-    maxWidth: "450px"
+    maxWidth: '450px',
   },
   button: {
     width: '200px',
