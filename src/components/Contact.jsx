@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Box, TextField, Button } from '@mui/material';
 import { styled } from '@mui/system';
 import CloseIcon from '@mui/icons-material/Close';
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 
 const styles = {
   formContainer: {
