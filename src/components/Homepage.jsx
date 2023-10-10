@@ -7,6 +7,9 @@ import Contact from './Contact';
 const styles = {
   box: {
     marginTop: '20px',
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
   },
   name: {
     fontSize: '1.5rem',
@@ -17,15 +20,16 @@ const styles = {
     },
   },
   tagLine: {
-    fontFamily: 'Montserrat, sans-serif',
-    fontWeight: 100,
+    fontFamily: 'IBM Plex Mono, monospace',
     fontSize: '2.5rem',
     letterSpacing: '0.1rem',
     color: '#333333',
   },
   button: {
-    color: '#805da6',
+    color: '#333333',
     fontWeight: 'bold',
+    fontSize: '1.5rem',
+    fontFamily: 'IBM Plex Mono, monospace',
   },
   portfolioItem: {
     lineHeight: 1.1,
@@ -49,22 +53,23 @@ const StickyContainer = styled('div')({
 
 const ScrollingContainer = styled('section')({
   height: '100vh',
-})
+});
 
 const Homepage = (props) => {
   const [contactMode, toggleContactMode] = useState(false);
   const bgColors = [
-    'rgb(255, 255, 255)',
+    'rgb(247, 237, 226)',
     'rgb(0, 143, 100)',
     'rgb(255, 186, 186)',
     'rgb(226, 72, 72)',
-    'rgb(0, 71, 255)',
+    'rgb(255, 255, 255)',
+    'rgb(74, 86, 247)',
     'rgb(219, 172, 255)',
     'rgb(125, 205, 250)',
-  ]
+  ];
   const scrollers = bgColors.map((color) => {
-    return <ScrollingContainer sx={{ background: color }} />
-  })
+    return <ScrollingContainer sx={{ background: color }} />;
+  });
 
   const renderContactForm = () => {
     if (contactMode) {
@@ -85,24 +90,28 @@ const Homepage = (props) => {
       {scrollers}
       <StickyContainer>
         <Box sx={styles.box}>
-          <Typography component="h1" sx={styles.name}>
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/andershowerton/">
-              ANDERS HOWERTON
-            </a>
-          </Typography>
-          <Typography component="h4" sx={styles.tagLine}>
-            FULL-STACK SOFTWARE ENGINEER
-          </Typography>
-          <Button
-            sx={styles.button}
-            onClick={() => {
-              toggleContactMode(true);
-            }}
-          >
-            CONTACT
-          </Button>
+          <Box>
+            <Typography component="h1" sx={styles.name}>
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/andershowerton/">
+                ANDERS HOWERTON
+              </a>
+            </Typography>
+            <Typography component="h4" sx={styles.tagLine}>
+              FULL-STACK SOFTWARE ENGINEER
+            </Typography>
+          </Box>
+          <Box>
+            <Button
+              sx={styles.button}
+              onClick={() => {
+                toggleContactMode(true);
+              }}
+            >
+              CONTACT
+            </Button>
+          </Box>
         </Box>
-        <Box mt={4}>
+        <Box mt={16}>
           <Typography sx={styles.portfolioItem}>
             <a target="_blank" rel="noreferrer" href="https://respuestavenezolanos.iom.int/en/platform-r4v">
               R4V PLATFORM

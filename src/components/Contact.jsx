@@ -8,11 +8,11 @@ import { useForm } from '@formspree/react';
 
 const styles = {
   formContainer: {
-    width: '100%',
-    height: '80%',
-    padding: '20px',
+    width: '80%',
+    height: '70%',
+    padding: '40px',
     marginTop: '8%',
-    background: '#f7ede2',
+    background: 'rgb(247, 237, 226)',
     opacity: '1.0',
     '& h2': {
       fontFamily: 'Montserrat, sans-serif',
