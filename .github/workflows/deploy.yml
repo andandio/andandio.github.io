@@ -8,7 +8,7 @@ permissions:
 jobs:
   build-and-deploy:
   concurrency: ci-${{ github.ref }}
-  rund-on: ubuntu-latest
+  run-on: ubuntu-latest
   steps:
     - name: Checkout 🌈
       uses: actions/checkout@v3
