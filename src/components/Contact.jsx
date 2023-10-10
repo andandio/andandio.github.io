@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Box, TextField, Button } from '@mui/material';
 import { styled } from '@mui/system';
 import CloseIcon from '@mui/icons-material/Close';
-import { useForm } from '@formspree/react';
+import { useForm, ValidationError } from '@formspree/react';
 
 const styles = {
   formContainer: {
@@ -73,7 +73,7 @@ export default function Contact(props) {
   const [name, setName] = useState('');
   const [messageValue, setMessageValue] = useState('');
   const [email, setEmail] = useState('');
-  const [submitState, handleSubmit] = useForm('xeqvvael');
+  const [submitState, handleSubmit] = useForm('xzvnwjqx');
   if (submitState.succeeded) {
     return (
       <Box component="p" sx={styles.ty}>
@@ -114,6 +114,7 @@ export default function Contact(props) {
               required={true}
               name="name"
             />
+            <ValidationError prefix="Name" field="name" errors={submitState.errors} />
             <TextField
               id="contact-email"
               label="Email"
@@ -123,6 +124,7 @@ export default function Contact(props) {
               required={true}
               name="email"
             />
+            <ValidationError prefix="Email" field="email" errors={submitState.errors} />
           </Box>
           <Box>
             <TextField
@@ -137,6 +139,7 @@ export default function Contact(props) {
               required={true}
               name="message"
             />
+            <ValidationError prefix="Message" field="message" errors={submitState.errors} />
           </Box>
           <Button
             variant="contained"
