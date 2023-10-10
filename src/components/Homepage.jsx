@@ -38,7 +38,6 @@ const styles = {
 };
 
 const HomepageContainer = styled('div')({
-  width: '100vw',
   height: '100vh',
   padding: '40px',
   backgroundColor: '#f7ede2',
@@ -66,7 +65,7 @@ const Homepage = (props) => {
       <Box sx={styles.box}>
         <Typography component="h1" sx={styles.name}>
           <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/andershowerton/">
-            ANDERS E. HOWERTON
+            ANDERS HOWERTON
           </a>
         </Typography>
         <Typography component="h4" sx={styles.tagLine}>

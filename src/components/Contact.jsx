@@ -22,7 +22,7 @@ const styles = {
   close: {
     position: 'absolute',
     top: '20px',
-    right: '35px',
+    right: '60px',
     cursor: 'pointer',
   },
   nameEmail: {
@@ -32,18 +32,20 @@ const styles = {
     gap: '20px',
     '& > div': {
       width: '43%',
+      maxWidth: '350px'
     },
   },
   message: {
     marginTop: '20px',
     width: '80%',
+    maxWidth: "450px"
   },
   button: {
     width: '200px',
     height: '40px',
     marginTop: '20px',
     background: '#805da6',
-    '&hover': {
+    '&:hover': {
       background: '#805da6',
     },
     '& span': {
@@ -94,10 +96,6 @@ export default function Contact(props) {
   const handleEmailChange = (event) => {
     console.log(`email ${event.target.value}`);
     setEmail(event.target.value);
-  };
-
-  const sendMessage = (event) => {
-    console.log(`sending ${event}`);
   };
 
   return (
