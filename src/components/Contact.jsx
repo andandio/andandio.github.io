@@ -83,18 +83,14 @@ export default function Contact(props) {
   }
 
   const handleMessageChange = (event) => {
-    console.log('changing');
-    console.log(event.target.value);
     setMessageValue(event.target.value);
   };
 
   const handleNameChange = (event) => {
-    console.log(`name ${event.target.value}`);
     setName(event.target.value);
   };
 
   const handleEmailChange = (event) => {
-    console.log(`email ${event.target.value}`);
     setEmail(event.target.value);
   };
 

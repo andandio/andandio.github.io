@@ -68,7 +68,7 @@ const Homepage = (props) => {
     'rgb(125, 205, 250)',
   ];
   const scrollers = bgColors.map((color) => {
-    return <ScrollingContainer sx={{ background: color }} />;
+    return <ScrollingContainer key={color} sx={{ background: color }} />;
   });
 
   const renderContactForm = () => {
