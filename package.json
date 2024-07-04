@@ -7,7 +7,7 @@
     "@emotion/styled": "^11.11.0",
     "@formspree/react": "^2.5.1",
     "@mui/icons-material": "^5.14.12",
-    "@mui/material": "^5.14.12",
+    "@mui/material": "^R",
     "@mui/system": "^5.14.12",
     "@testing-library/jest-dom": "^6.1.3",
     "@testing-library/react": "^14.0.0",
