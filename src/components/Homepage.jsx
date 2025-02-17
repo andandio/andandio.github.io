@@ -113,7 +113,7 @@ const Homepage = (props) => {
         </Box>
         <Box mt={16}>
           <Typography sx={styles.portfolioItem}>
-            <a target="_blank" rel="noreferrer" href="https://respuestavenezolanos.iom.int/en/platform-r4v">
+            <a target="_blank" rel="noreferrer" href="https://www.r4v.info/en/supportspaces">
               R4V PLATFORM
             </a>
           </Typography>
@@ -125,6 +125,11 @@ const Homepage = (props) => {
           <Typography sx={styles.portfolioItem}>
             <a target="_blank" rel="noreferrer" href="https://apps.apple.com/us/app/tiny-spark/id1437934449">
               TINY SPARK
+            </a>
+          </Typography>
+          <Typography sx={styles.portfolioItem}>
+            <a target="_blank" rel="noreferrer" href="https://main.d2syx8lejfpjhs.amplifyapp.com/">
+              CHART TOOL
             </a>
           </Typography>
         </Box>
